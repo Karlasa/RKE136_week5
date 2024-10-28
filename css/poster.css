@@ -142,3 +142,47 @@ footer ul li a {
   }
 }
 */
+
+.modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #4037372e;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #fffec1;
+  margin: 5% auto;
+  padding: 5rem;
+  width: 40%;
+  animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.closeBtn {
+  float: right;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.movie-poster {
+  cursor: pointer;
+}
+
+.movie-poster-modal {
+  height: 350px;
+  margin-bottom: 1rem;
+}
